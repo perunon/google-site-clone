@@ -4,4 +4,78 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBar {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.topBar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+.topBar a:hover {
+  text-decoration: underline;
+}
+
+.topBar .apps {
+  color: #5f6368;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 12px;
+}
+
+.topBar .apps:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.topBar .loginBtn {
+  height: 36px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3770e5;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topBar .loginBtn:hover {
+  cursor: pointer;
+  background-color: #2b7de9;
+  -webkit-box-shadow: 0px 1px 5px -1px #3770e5;
+          box-shadow: 0px 1px 5px -1px #3770e5;
+}
 /*# sourceMappingURL=main.css.map */
