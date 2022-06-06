@@ -146,6 +146,13 @@ body {
 
 .content .searchBar .keyboardAndMicro {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .searchBar .keyboardAndMicro .tooltip:hover {
+  cursor: pointer;
 }
 
 .content .searchBtns button {
@@ -185,7 +192,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 0px 15px;
   height: 48px;
 }
 
@@ -230,5 +237,74 @@ body {
 
 .footer .bottom a:hover {
   text-decoration: underline;
+}
+
+.tooltip {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #4f5355;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-top: 5px;
+}
+
+.tooltip .searchBarTooltipText {
+  visibility: hidden;
+  width: auto;
+  background-color: #2d2d2d;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+  padding: 7px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-top: 18px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.tooltip .searchBarTooltipText::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #2d2d2d transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.tooltip:hover .searchBarTooltipText {
+  visibility: visible;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 /*# sourceMappingURL=main.css.map */

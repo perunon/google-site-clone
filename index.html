@@ -15,7 +15,10 @@
     <div class="topBar">
       <a href="#">Gmail</a>
       <a href="#">Grafika</a>
-      <div class="apps"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+      <div class="apps tooltip">
+        <i class="bi bi-grid-3x3-gap-fill"></i
+        ><span class="tooltiptext">Aplikacje Google</span>
+      </div>
       <button class="loginBtn">Zaloguj się</button>
     </div>
     <main class="content">
@@ -24,8 +27,16 @@
         <i class="bi bi-search"></i>
         <input type="text" />
         <div class="keyboardAndMicro">
-          <i class="bi bi-keyboard-fill"></i>
-          <i class="bi bi-mic-fill"></i>
+          <div class="tooltip">
+            <i class="bi bi-keyboard-fill"></i>
+            <span class="searchBarTooltipText"
+              >Narzędzia do wprowadzania tekstu</span
+            >
+          </div>
+          <div class="tooltip">
+            <i class="bi bi-mic-fill"></i>
+            <span class="searchBarTooltipText">Wyszukiwanie głosowe</span>
+          </div>
         </div>
       </div>
       <div class="searchBtns">

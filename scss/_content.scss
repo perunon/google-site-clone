@@ -34,6 +34,11 @@
 
     .keyboardAndMicro {
       margin-left: auto;
+      display: flex;
+
+      .tooltip:hover {
+        cursor: pointer;
+      }
     }
   }
 
