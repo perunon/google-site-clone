@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+  .middleSide {
+    flex: 100% !important;
+    order: -1;
+  }
+
+  .box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 872px) {
+  .middleSide {
+    flex: 100% !important;
+    order: -1;
+  }
+
+  .leftSide {
+    flex: 100% !important;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .leftSide,
+  .rightSide {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .searchBar {
+    width: 95% !important;
+  }
+}

@@ -17,12 +17,54 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: rgba(0, 0, 0, 0.87);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .middleSide {
+    -webkit-box-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 872px) {
+  .middleSide {
+    -webkit-box-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .leftSide {
+    -webkit-box-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+  }
+  .box {
+    padding: 15px;
+  }
+  .leftSide,
+  .rightSide {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .searchBar {
+    width: 95% !important;
+  }
 }
 
 .topBar {
@@ -96,7 +138,7 @@ body {
 
 .content {
   width: 100%;
-  height: 100%;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,9 +214,12 @@ body {
 }
 
 .footer {
+  width: 100%;
   background-color: #f2f2f2;
   font-size: 15px;
   color: #70757a;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer .top {
@@ -186,29 +231,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 15px;
-  height: 48px;
+  padding: 15px;
 }
 
 .footer .bottom .box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .footer .bottom .leftSide {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .footer .bottom .middleSide {
@@ -226,6 +274,8 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .footer .bottom a {
